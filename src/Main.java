@@ -1,6 +1,9 @@
 import document.DocumentFactoryInterface;
 import document.PdfDocumentFactory;
 import document.WordDocumentFactory;
+import theme.DarkTheme;
+import theme.LightTheme;
+import theme.ThemeAbstractFactoryInterface;
 
 public class Main {
 
@@ -21,6 +24,11 @@ public class Main {
     // The most appropriate design pattern to use in the second task is
     // Abstract Factory
     public static void task2(){
-
+        ThemeAbstractFactoryInterface light = new LightTheme();
+        ThemeAbstractFactoryInterface dark = new DarkTheme();
+        light.createButton();
+        light.createCheckbox();
+        dark.createButton();
+        dark.createCheckbox();
     }
 }
