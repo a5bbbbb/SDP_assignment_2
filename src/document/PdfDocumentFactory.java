@@ -1,7 +1,7 @@
 package document;
 
-public class PdfDocumentFactory implements DocumentFactory{
-    public Document createDocument(String name) {
+public class PdfDocumentFactory implements DocumentFactoryInterface {
+    public DocumentInterface createDocument(String name) {
         return new PdfDocument(name);
     }
 }

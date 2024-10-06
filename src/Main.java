@@ -1,5 +1,4 @@
-import document.Document;
-import document.DocumentFactory;
+import document.DocumentFactoryInterface;
 import document.PdfDocumentFactory;
 import document.WordDocumentFactory;
 
@@ -13,8 +12,8 @@ public class Main {
     // The most appropriate design pattern to use in the first task is
     // Factory Method
     public static void task1(){
-        DocumentFactory wordFactory = new WordDocumentFactory();
-        DocumentFactory pdfFactory = new PdfDocumentFactory();
+        DocumentFactoryInterface wordFactory = new WordDocumentFactory();
+        DocumentFactoryInterface pdfFactory = new PdfDocumentFactory();
         wordFactory.createDocument("Word1");
         pdfFactory.createDocument("Pdf1");
     }

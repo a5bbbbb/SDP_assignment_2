@@ -1,7 +1,7 @@
 package document;
 
-public class WordDocumentFactory implements DocumentFactory{
-    public Document createDocument(String name) {
+public class WordDocumentFactory implements DocumentFactoryInterface {
+    public DocumentInterface createDocument(String name) {
         return new WordDocument(name);
     }
 }
